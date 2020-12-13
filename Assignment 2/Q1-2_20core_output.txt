@@ -1,0 +1,903 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+2020-05-09 03:45:03 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-09 03:45:18 INFO  SparkContext:54 - Running Spark version 2.3.2
+2020-05-09 03:45:18 INFO  SparkContext:54 - Submitted application: COM6012 assignment 2
+2020-05-09 03:45:18 INFO  SecurityManager:54 - Changing view acls to: acr19wy
+2020-05-09 03:45:18 INFO  SecurityManager:54 - Changing modify acls to: acr19wy
+2020-05-09 03:45:18 INFO  SecurityManager:54 - Changing view acls groups to: 
+2020-05-09 03:45:18 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2020-05-09 03:45:18 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(acr19wy); groups with view permissions: Set(); users  with modify permissions: Set(acr19wy); groups with modify permissions: Set()
+2020-05-09 03:45:19 INFO  Utils:54 - Successfully started service 'sparkDriver' on port 39113.
+2020-05-09 03:45:19 INFO  SparkEnv:54 - Registering MapOutputTracker
+2020-05-09 03:45:19 INFO  SparkEnv:54 - Registering BlockManagerMaster
+2020-05-09 03:45:19 INFO  BlockManagerMasterEndpoint:54 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2020-05-09 03:45:19 INFO  BlockManagerMasterEndpoint:54 - BlockManagerMasterEndpoint up
+2020-05-09 03:45:19 INFO  DiskBlockManager:54 - Created local directory at /tmp/blockmgr-fba02dd6-089f-4bff-8b93-1a3b9ddd81ac
+2020-05-09 03:45:19 INFO  MemoryStore:54 - MemoryStore started with capacity 366.3 MB
+2020-05-09 03:45:19 INFO  SparkEnv:54 - Registering OutputCommitCoordinator
+2020-05-09 03:45:19 INFO  log:192 - Logging initialized @18865ms
+2020-05-09 03:45:19 INFO  Server:351 - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+2020-05-09 03:45:19 INFO  Server:419 - Started @18956ms
+2020-05-09 03:45:19 INFO  AbstractConnector:278 - Started ServerConnector@7839ff28{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2020-05-09 03:45:19 INFO  Utils:54 - Successfully started service 'SparkUI' on port 4040.
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5fde102d{/jobs,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@a4efcba{/jobs/json,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@bc6623c{/jobs/job,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@13b3c177{/jobs/job/json,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6e655497{/stages,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@568a1ce5{/stages/json,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@39fd996{/stages/stage,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4cc474c1{/stages/stage/json,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@316a47a6{/stages/pool,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6fd9fc20{/stages/pool/json,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5ce7f012{/storage,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@33eae533{/storage/json,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@505ec39f{/storage/rdd,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@70461d48{/storage/rdd/json,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@13420432{/environment,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@77e5a814{/environment/json,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5181cf4c{/executors,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@11ed2469{/executors/json,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@120dd1f2{/executors/threadDump,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@48726eaf{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@17563342{/static,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@24efedc2{/,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@21e1b1a6{/api,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@14ff5c36{/jobs/job/kill,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@23facd3c{/stages/stage/kill,null,AVAILABLE,@Spark}
+2020-05-09 03:45:19 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://sharc-node108.shef.ac.uk:4040
+2020-05-09 03:45:20 INFO  SparkContext:54 - Added file file:/home/acr19wy/./Code/Q1-2.py at file:/home/acr19wy/./Code/Q1-2.py with timestamp 1588992320357
+2020-05-09 03:45:20 INFO  Utils:54 - Copying /home/acr19wy/Code/Q1-2.py to /tmp/spark-91470859-1d0d-4112-b149-91288d805fc3/userFiles-abc8180a-9cae-4e5a-b84d-b24468c91a93/Q1-2.py
+2020-05-09 03:45:20 INFO  Executor:54 - Starting executor ID driver on host localhost
+2020-05-09 03:45:20 INFO  Utils:54 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35284.
+2020-05-09 03:45:20 INFO  NettyBlockTransferService:54 - Server created on sharc-node108.shef.ac.uk:35284
+2020-05-09 03:45:20 INFO  BlockManager:54 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2020-05-09 03:45:20 INFO  BlockManagerMaster:54 - Registering BlockManager BlockManagerId(driver, sharc-node108.shef.ac.uk, 35284, None)
+2020-05-09 03:45:20 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sharc-node108.shef.ac.uk:35284 with 366.3 MB RAM, BlockManagerId(driver, sharc-node108.shef.ac.uk, 35284, None)
+2020-05-09 03:45:20 INFO  BlockManagerMaster:54 - Registered BlockManager BlockManagerId(driver, sharc-node108.shef.ac.uk, 35284, None)
+2020-05-09 03:45:20 INFO  BlockManager:54 - Initialized BlockManager: BlockManagerId(driver, sharc-node108.shef.ac.uk, 35284, None)
+2020-05-09 03:45:20 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@29be171b{/metrics/json,null,AVAILABLE,@Spark}
+2020-05-09 03:45:21 INFO  SharedState:54 - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/acr19wy/spark-warehouse/').
+2020-05-09 03:45:21 INFO  SharedState:54 - Warehouse path is 'file:/home/acr19wy/spark-warehouse/'.
+2020-05-09 03:45:21 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4d03b76a{/SQL,null,AVAILABLE,@Spark}
+2020-05-09 03:45:21 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@10a43a9e{/SQL/json,null,AVAILABLE,@Spark}
+2020-05-09 03:45:21 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@77874628{/SQL/execution,null,AVAILABLE,@Spark}
+2020-05-09 03:45:21 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4a881ce1{/SQL/execution/json,null,AVAILABLE,@Spark}
+2020-05-09 03:45:21 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@67183dd0{/static/sql,null,AVAILABLE,@Spark}
+2020-05-09 03:45:22 INFO  StateStoreCoordinatorRef:54 - Registered StateStoreCoordinator endpoint
+2020-05-09 03:45:28 WARN  Utils:66 - Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.debug.maxToStringFields' in SparkEnv.conf.
+2020-05-09 04:16:02 WARN  MemoryStore:66 - Not enough space to cache rdd_28_0 in memory! (computed 65.8 MB so far)
+2020-05-09 04:16:02 WARN  BlockManager:66 - Persisting block rdd_28_0 to disk instead.
+2020-05-09 04:16:49 WARN  MemoryStore:66 - Not enough space to cache rdd_28_0 in memory! (computed 339.5 MB so far)
+2020-05-09 04:17:03 WARN  MemoryStore:66 - Not enough space to cache rdd_28_0 in memory! (computed 339.5 MB so far)
+2020-05-09 04:17:18 WARN  MemoryStore:66 - Not enough space to cache rdd_28_0 in memory! (computed 339.5 MB so far)
+2020-05-09 04:17:34 WARN  MemoryStore:66 - Not enough space to cache rdd_28_0 in memory! (computed 339.5 MB so far)
+2020-05-09 04:17:52 WARN  MemoryStore:66 - Not enough space to cache rdd_28_0 in memory! (computed 339.5 MB so far)
+2020-05-09 04:18:11 WARN  MemoryStore:66 - Not enough space to cache rdd_28_0 in memory! (computed 339.5 MB so far)
+2020-05-09 04:18:32 WARN  MemoryStore:66 - Not enough space to cache rdd_28_0 in memory! (computed 339.5 MB so far)
+training time of rfc: 2360.2766573429108
+2020-05-09 04:36:45 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 66.8 MB so far)
+2020-05-09 04:36:45 WARN  BlockManager:66 - Persisting block rdd_55_0 to disk instead.
+2020-05-09 04:37:15 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:37:17 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:37:26 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:37:36 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:37:36 WARN  MemoryStore:66 - Not enough space to cache rdd_63_0 in memory! (computed 8.0 MB so far)
+2020-05-09 04:37:36 WARN  BlockManager:66 - Persisting block rdd_63_0 to disk instead.
+2020-05-09 04:38:06 WARN  MemoryStore:66 - Not enough space to cache rdd_63_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:38:18 WARN  MemoryStore:66 - Not enough space to cache rdd_63_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:38:30 WARN  MemoryStore:66 - Not enough space to cache rdd_63_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:38:41 WARN  MemoryStore:66 - Not enough space to cache rdd_63_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:38:54 WARN  MemoryStore:66 - Not enough space to cache rdd_63_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:39:06 WARN  MemoryStore:66 - Not enough space to cache rdd_63_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:39:19 WARN  MemoryStore:66 - Not enough space to cache rdd_63_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:39:32 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:39:32 WARN  MemoryStore:66 - Not enough space to cache rdd_85_0 in memory! (computed 8.2 MB so far)
+2020-05-09 04:39:32 WARN  BlockManager:66 - Block rdd_85_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:39:32 WARN  BlockManager:66 - Putting block rdd_85_0 failed
+2020-05-09 04:39:33 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 04:39:35 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:39:35 WARN  MemoryStore:66 - Not enough space to cache rdd_85_0 in memory! (computed 8.2 MB so far)
+2020-05-09 04:39:35 WARN  BlockManager:66 - Block rdd_85_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:39:35 WARN  BlockManager:66 - Putting block rdd_85_0 failed
+2020-05-09 04:39:35 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 04:39:54 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:39:54 WARN  MemoryStore:66 - Not enough space to cache rdd_85_0 in memory! (computed 8.2 MB so far)
+2020-05-09 04:39:54 WARN  BlockManager:66 - Block rdd_85_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:39:54 WARN  BlockManager:66 - Putting block rdd_85_0 failed
+2020-05-09 04:39:55 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 04:40:15 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:40:15 WARN  MemoryStore:66 - Not enough space to cache rdd_85_0 in memory! (computed 8.2 MB so far)
+2020-05-09 04:40:15 WARN  BlockManager:66 - Block rdd_85_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:40:15 WARN  BlockManager:66 - Putting block rdd_85_0 failed
+2020-05-09 04:40:15 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 04:40:15 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_96_0 in memory.
+2020-05-09 04:40:15 WARN  MemoryStore:66 - Not enough space to cache rdd_96_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:40:15 WARN  BlockManager:66 - Persisting block rdd_96_0 to disk instead.
+2020-05-09 04:40:57 WARN  MemoryStore:66 - Not enough space to cache rdd_96_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:41:09 WARN  MemoryStore:66 - Not enough space to cache rdd_96_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:41:21 WARN  MemoryStore:66 - Not enough space to cache rdd_96_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:41:33 WARN  MemoryStore:66 - Not enough space to cache rdd_96_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:41:45 WARN  MemoryStore:66 - Not enough space to cache rdd_96_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:41:58 WARN  MemoryStore:66 - Not enough space to cache rdd_96_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:42:11 WARN  MemoryStore:66 - Not enough space to cache rdd_96_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:42:23 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:42:23 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 04:42:24 WARN  MemoryStore:66 - Not enough space to cache rdd_85_0 in memory! (computed 8.2 MB so far)
+2020-05-09 04:42:24 WARN  BlockManager:66 - Block rdd_85_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:42:24 WARN  BlockManager:66 - Putting block rdd_85_0 failed
+2020-05-09 04:42:24 WARN  MemoryStore:66 - Not enough space to cache rdd_119_0 in memory! (computed 2.4 MB so far)
+2020-05-09 04:42:24 WARN  BlockManager:66 - Block rdd_119_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:42:24 WARN  BlockManager:66 - Putting block rdd_119_0 failed
+2020-05-09 04:42:24 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:42:24 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:42:27 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:42:27 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 04:42:27 WARN  MemoryStore:66 - Not enough space to cache rdd_85_0 in memory! (computed 8.2 MB so far)
+2020-05-09 04:42:27 WARN  BlockManager:66 - Block rdd_85_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:42:27 WARN  BlockManager:66 - Putting block rdd_85_0 failed
+2020-05-09 04:42:27 WARN  MemoryStore:66 - Not enough space to cache rdd_119_0 in memory! (computed 2.4 MB so far)
+2020-05-09 04:42:27 WARN  BlockManager:66 - Block rdd_119_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:42:27 WARN  BlockManager:66 - Putting block rdd_119_0 failed
+2020-05-09 04:42:27 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:42:27 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:42:56 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:42:57 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 04:42:57 WARN  MemoryStore:66 - Not enough space to cache rdd_85_0 in memory! (computed 8.2 MB so far)
+2020-05-09 04:42:57 WARN  BlockManager:66 - Block rdd_85_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:42:57 WARN  BlockManager:66 - Putting block rdd_85_0 failed
+2020-05-09 04:42:57 WARN  MemoryStore:66 - Not enough space to cache rdd_119_0 in memory! (computed 2.4 MB so far)
+2020-05-09 04:42:57 WARN  BlockManager:66 - Block rdd_119_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:42:57 WARN  BlockManager:66 - Putting block rdd_119_0 failed
+2020-05-09 04:42:57 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:42:57 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:43:28 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:43:28 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 04:43:28 WARN  MemoryStore:66 - Not enough space to cache rdd_85_0 in memory! (computed 8.2 MB so far)
+2020-05-09 04:43:28 WARN  BlockManager:66 - Block rdd_85_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:43:28 WARN  BlockManager:66 - Putting block rdd_85_0 failed
+2020-05-09 04:43:28 WARN  MemoryStore:66 - Not enough space to cache rdd_119_0 in memory! (computed 2.4 MB so far)
+2020-05-09 04:43:28 WARN  BlockManager:66 - Block rdd_119_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:43:28 WARN  BlockManager:66 - Putting block rdd_119_0 failed
+2020-05-09 04:43:28 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:43:28 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:43:28 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_129_0 in memory.
+2020-05-09 04:43:28 WARN  MemoryStore:66 - Not enough space to cache rdd_129_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:43:28 WARN  BlockManager:66 - Persisting block rdd_129_0 to disk instead.
+2020-05-09 04:44:22 WARN  MemoryStore:66 - Not enough space to cache rdd_129_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:44:34 WARN  MemoryStore:66 - Not enough space to cache rdd_129_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:44:47 WARN  MemoryStore:66 - Not enough space to cache rdd_129_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:44:59 WARN  MemoryStore:66 - Not enough space to cache rdd_129_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:45:13 WARN  MemoryStore:66 - Not enough space to cache rdd_129_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:45:25 WARN  MemoryStore:66 - Not enough space to cache rdd_129_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:45:38 WARN  MemoryStore:66 - Not enough space to cache rdd_129_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:45:51 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:45:51 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 04:45:51 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 04:45:51 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_85_0 in memory.
+2020-05-09 04:45:51 WARN  MemoryStore:66 - Not enough space to cache rdd_85_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:45:51 WARN  BlockManager:66 - Block rdd_85_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:45:51 WARN  BlockManager:66 - Putting block rdd_85_0 failed
+2020-05-09 04:45:51 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_119_0 in memory.
+2020-05-09 04:45:51 WARN  MemoryStore:66 - Not enough space to cache rdd_119_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:45:51 WARN  BlockManager:66 - Block rdd_119_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:45:51 WARN  BlockManager:66 - Putting block rdd_119_0 failed
+2020-05-09 04:45:51 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_152_0 in memory.
+2020-05-09 04:45:51 WARN  MemoryStore:66 - Not enough space to cache rdd_152_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:45:51 WARN  BlockManager:66 - Block rdd_152_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:45:51 WARN  BlockManager:66 - Putting block rdd_152_0 failed
+2020-05-09 04:45:51 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:45:51 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:45:53 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:45:54 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 04:45:54 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 04:45:54 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_85_0 in memory.
+2020-05-09 04:45:54 WARN  MemoryStore:66 - Not enough space to cache rdd_85_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:45:54 WARN  BlockManager:66 - Block rdd_85_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:45:54 WARN  BlockManager:66 - Putting block rdd_85_0 failed
+2020-05-09 04:45:54 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_119_0 in memory.
+2020-05-09 04:45:54 WARN  MemoryStore:66 - Not enough space to cache rdd_119_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:45:54 WARN  BlockManager:66 - Block rdd_119_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:45:54 WARN  BlockManager:66 - Putting block rdd_119_0 failed
+2020-05-09 04:45:54 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_152_0 in memory.
+2020-05-09 04:45:54 WARN  MemoryStore:66 - Not enough space to cache rdd_152_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:45:54 WARN  BlockManager:66 - Block rdd_152_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:45:54 WARN  BlockManager:66 - Putting block rdd_152_0 failed
+2020-05-09 04:45:54 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:45:54 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:46:34 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:46:35 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 04:46:35 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 04:46:35 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_85_0 in memory.
+2020-05-09 04:46:35 WARN  MemoryStore:66 - Not enough space to cache rdd_85_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:46:35 WARN  BlockManager:66 - Block rdd_85_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:46:35 WARN  BlockManager:66 - Putting block rdd_85_0 failed
+2020-05-09 04:46:35 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_119_0 in memory.
+2020-05-09 04:46:35 WARN  MemoryStore:66 - Not enough space to cache rdd_119_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:46:35 WARN  BlockManager:66 - Block rdd_119_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:46:35 WARN  BlockManager:66 - Putting block rdd_119_0 failed
+2020-05-09 04:46:35 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_152_0 in memory.
+2020-05-09 04:46:35 WARN  MemoryStore:66 - Not enough space to cache rdd_152_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:46:35 WARN  BlockManager:66 - Block rdd_152_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:46:35 WARN  BlockManager:66 - Putting block rdd_152_0 failed
+2020-05-09 04:46:35 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:46:35 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:47:16 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:47:16 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 04:47:16 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 04:47:16 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_85_0 in memory.
+2020-05-09 04:47:16 WARN  MemoryStore:66 - Not enough space to cache rdd_85_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:47:16 WARN  BlockManager:66 - Block rdd_85_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:47:16 WARN  BlockManager:66 - Putting block rdd_85_0 failed
+2020-05-09 04:47:16 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_119_0 in memory.
+2020-05-09 04:47:16 WARN  MemoryStore:66 - Not enough space to cache rdd_119_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:47:16 WARN  BlockManager:66 - Block rdd_119_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:47:16 WARN  BlockManager:66 - Putting block rdd_119_0 failed
+2020-05-09 04:47:16 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_152_0 in memory.
+2020-05-09 04:47:16 WARN  MemoryStore:66 - Not enough space to cache rdd_152_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:47:16 WARN  BlockManager:66 - Block rdd_152_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:47:16 WARN  BlockManager:66 - Putting block rdd_152_0 failed
+2020-05-09 04:47:16 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:47:16 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:47:16 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_162_0 in memory.
+2020-05-09 04:47:16 WARN  MemoryStore:66 - Not enough space to cache rdd_162_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:47:16 WARN  BlockManager:66 - Persisting block rdd_162_0 to disk instead.
+2020-05-09 04:48:22 WARN  MemoryStore:66 - Not enough space to cache rdd_162_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:48:35 WARN  MemoryStore:66 - Not enough space to cache rdd_162_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:48:47 WARN  MemoryStore:66 - Not enough space to cache rdd_162_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:49:00 WARN  MemoryStore:66 - Not enough space to cache rdd_162_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:49:12 WARN  MemoryStore:66 - Not enough space to cache rdd_162_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:49:25 WARN  MemoryStore:66 - Not enough space to cache rdd_162_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:49:38 WARN  MemoryStore:66 - Not enough space to cache rdd_162_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:49:51 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:49:51 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 04:49:51 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 04:49:51 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:49:51 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:49:51 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_119_0 in memory.
+2020-05-09 04:49:51 WARN  MemoryStore:66 - Not enough space to cache rdd_119_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:49:51 WARN  BlockManager:66 - Block rdd_119_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:49:51 WARN  BlockManager:66 - Putting block rdd_119_0 failed
+2020-05-09 04:49:51 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_152_0 in memory.
+2020-05-09 04:49:51 WARN  MemoryStore:66 - Not enough space to cache rdd_152_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:49:51 WARN  BlockManager:66 - Block rdd_152_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:49:51 WARN  BlockManager:66 - Putting block rdd_152_0 failed
+2020-05-09 04:49:51 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_185_0 in memory.
+2020-05-09 04:49:51 WARN  MemoryStore:66 - Not enough space to cache rdd_185_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:49:51 WARN  BlockManager:66 - Block rdd_185_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:49:51 WARN  BlockManager:66 - Putting block rdd_185_0 failed
+2020-05-09 04:49:51 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:49:51 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:49:54 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:49:54 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 04:49:54 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 04:49:54 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:49:54 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:49:54 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_119_0 in memory.
+2020-05-09 04:49:54 WARN  MemoryStore:66 - Not enough space to cache rdd_119_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:49:54 WARN  BlockManager:66 - Block rdd_119_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:49:54 WARN  BlockManager:66 - Putting block rdd_119_0 failed
+2020-05-09 04:49:54 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_152_0 in memory.
+2020-05-09 04:49:54 WARN  MemoryStore:66 - Not enough space to cache rdd_152_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:49:54 WARN  BlockManager:66 - Block rdd_152_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:49:54 WARN  BlockManager:66 - Putting block rdd_152_0 failed
+2020-05-09 04:49:54 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_185_0 in memory.
+2020-05-09 04:49:54 WARN  MemoryStore:66 - Not enough space to cache rdd_185_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:49:54 WARN  BlockManager:66 - Block rdd_185_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:49:54 WARN  BlockManager:66 - Putting block rdd_185_0 failed
+2020-05-09 04:49:54 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:49:54 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:50:46 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:50:46 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 04:50:46 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 04:50:46 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:50:46 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:50:46 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_119_0 in memory.
+2020-05-09 04:50:46 WARN  MemoryStore:66 - Not enough space to cache rdd_119_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:50:46 WARN  BlockManager:66 - Block rdd_119_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:50:46 WARN  BlockManager:66 - Putting block rdd_119_0 failed
+2020-05-09 04:50:46 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_152_0 in memory.
+2020-05-09 04:50:46 WARN  MemoryStore:66 - Not enough space to cache rdd_152_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:50:46 WARN  BlockManager:66 - Block rdd_152_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:50:46 WARN  BlockManager:66 - Putting block rdd_152_0 failed
+2020-05-09 04:50:46 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_185_0 in memory.
+2020-05-09 04:50:46 WARN  MemoryStore:66 - Not enough space to cache rdd_185_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:50:46 WARN  BlockManager:66 - Block rdd_185_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:50:46 WARN  BlockManager:66 - Putting block rdd_185_0 failed
+2020-05-09 04:50:46 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:50:46 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:51:37 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:51:37 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 04:51:37 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 04:51:37 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:51:37 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:51:37 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_119_0 in memory.
+2020-05-09 04:51:37 WARN  MemoryStore:66 - Not enough space to cache rdd_119_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:51:37 WARN  BlockManager:66 - Block rdd_119_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:51:37 WARN  BlockManager:66 - Putting block rdd_119_0 failed
+2020-05-09 04:51:37 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_152_0 in memory.
+2020-05-09 04:51:37 WARN  MemoryStore:66 - Not enough space to cache rdd_152_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:51:37 WARN  BlockManager:66 - Block rdd_152_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:51:37 WARN  BlockManager:66 - Putting block rdd_152_0 failed
+2020-05-09 04:51:37 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_185_0 in memory.
+2020-05-09 04:51:37 WARN  MemoryStore:66 - Not enough space to cache rdd_185_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:51:37 WARN  BlockManager:66 - Block rdd_185_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:51:37 WARN  BlockManager:66 - Putting block rdd_185_0 failed
+2020-05-09 04:51:37 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:51:37 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:51:37 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_195_0 in memory.
+2020-05-09 04:51:37 WARN  MemoryStore:66 - Not enough space to cache rdd_195_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:51:37 WARN  BlockManager:66 - Persisting block rdd_195_0 to disk instead.
+2020-05-09 04:52:53 WARN  MemoryStore:66 - Not enough space to cache rdd_195_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:53:05 WARN  MemoryStore:66 - Not enough space to cache rdd_195_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:53:18 WARN  MemoryStore:66 - Not enough space to cache rdd_195_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:53:30 WARN  MemoryStore:66 - Not enough space to cache rdd_195_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:53:43 WARN  MemoryStore:66 - Not enough space to cache rdd_195_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:53:55 WARN  MemoryStore:66 - Not enough space to cache rdd_195_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:54:08 WARN  MemoryStore:66 - Not enough space to cache rdd_195_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:54:21 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:54:21 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 04:54:21 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 04:54:21 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:54:21 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:54:21 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:54:21 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:54:21 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_152_0 in memory.
+2020-05-09 04:54:21 WARN  MemoryStore:66 - Not enough space to cache rdd_152_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:54:21 WARN  BlockManager:66 - Block rdd_152_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:54:21 WARN  BlockManager:66 - Putting block rdd_152_0 failed
+2020-05-09 04:54:21 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_185_0 in memory.
+2020-05-09 04:54:21 WARN  MemoryStore:66 - Not enough space to cache rdd_185_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:54:21 WARN  BlockManager:66 - Block rdd_185_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:54:21 WARN  BlockManager:66 - Putting block rdd_185_0 failed
+2020-05-09 04:54:21 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_218_0 in memory.
+2020-05-09 04:54:21 WARN  MemoryStore:66 - Not enough space to cache rdd_218_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:54:21 WARN  BlockManager:66 - Block rdd_218_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:54:21 WARN  BlockManager:66 - Putting block rdd_218_0 failed
+2020-05-09 04:54:21 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:54:21 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:54:23 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:54:23 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 04:54:23 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 04:54:23 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:54:23 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:54:23 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:54:23 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:54:23 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_152_0 in memory.
+2020-05-09 04:54:23 WARN  MemoryStore:66 - Not enough space to cache rdd_152_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:54:23 WARN  BlockManager:66 - Block rdd_152_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:54:23 WARN  BlockManager:66 - Putting block rdd_152_0 failed
+2020-05-09 04:54:23 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_185_0 in memory.
+2020-05-09 04:54:23 WARN  MemoryStore:66 - Not enough space to cache rdd_185_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:54:23 WARN  BlockManager:66 - Block rdd_185_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:54:23 WARN  BlockManager:66 - Putting block rdd_185_0 failed
+2020-05-09 04:54:23 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_218_0 in memory.
+2020-05-09 04:54:23 WARN  MemoryStore:66 - Not enough space to cache rdd_218_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:54:23 WARN  BlockManager:66 - Block rdd_218_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:54:23 WARN  BlockManager:66 - Putting block rdd_218_0 failed
+2020-05-09 04:54:23 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:54:23 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:55:25 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:55:25 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 04:55:25 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 04:55:25 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:55:25 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:55:25 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:55:25 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:55:25 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_152_0 in memory.
+2020-05-09 04:55:25 WARN  MemoryStore:66 - Not enough space to cache rdd_152_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:55:25 WARN  BlockManager:66 - Block rdd_152_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:55:25 WARN  BlockManager:66 - Putting block rdd_152_0 failed
+2020-05-09 04:55:25 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_185_0 in memory.
+2020-05-09 04:55:25 WARN  MemoryStore:66 - Not enough space to cache rdd_185_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:55:25 WARN  BlockManager:66 - Block rdd_185_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:55:25 WARN  BlockManager:66 - Putting block rdd_185_0 failed
+2020-05-09 04:55:25 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_218_0 in memory.
+2020-05-09 04:55:25 WARN  MemoryStore:66 - Not enough space to cache rdd_218_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:55:25 WARN  BlockManager:66 - Block rdd_218_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:55:25 WARN  BlockManager:66 - Putting block rdd_218_0 failed
+2020-05-09 04:55:25 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:55:25 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:56:29 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:56:29 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 04:56:29 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 04:56:29 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:56:29 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:56:29 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:56:29 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:56:29 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_152_0 in memory.
+2020-05-09 04:56:29 WARN  MemoryStore:66 - Not enough space to cache rdd_152_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:56:29 WARN  BlockManager:66 - Block rdd_152_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:56:29 WARN  BlockManager:66 - Putting block rdd_152_0 failed
+2020-05-09 04:56:29 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_185_0 in memory.
+2020-05-09 04:56:29 WARN  MemoryStore:66 - Not enough space to cache rdd_185_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:56:29 WARN  BlockManager:66 - Block rdd_185_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:56:29 WARN  BlockManager:66 - Putting block rdd_185_0 failed
+2020-05-09 04:56:29 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_218_0 in memory.
+2020-05-09 04:56:29 WARN  MemoryStore:66 - Not enough space to cache rdd_218_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:56:29 WARN  BlockManager:66 - Block rdd_218_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:56:29 WARN  BlockManager:66 - Putting block rdd_218_0 failed
+2020-05-09 04:56:29 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:56:29 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:56:29 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_228_0 in memory.
+2020-05-09 04:56:29 WARN  MemoryStore:66 - Not enough space to cache rdd_228_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:56:29 WARN  BlockManager:66 - Persisting block rdd_228_0 to disk instead.
+2020-05-09 04:57:59 WARN  MemoryStore:66 - Not enough space to cache rdd_228_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:58:12 WARN  MemoryStore:66 - Not enough space to cache rdd_228_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:58:25 WARN  MemoryStore:66 - Not enough space to cache rdd_228_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:58:37 WARN  MemoryStore:66 - Not enough space to cache rdd_228_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:58:49 WARN  MemoryStore:66 - Not enough space to cache rdd_228_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:59:02 WARN  MemoryStore:66 - Not enough space to cache rdd_228_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:59:14 WARN  MemoryStore:66 - Not enough space to cache rdd_228_0 in memory! (computed 342.0 MB so far)
+2020-05-09 04:59:27 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:59:27 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 04:59:27 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 04:59:27 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:59:27 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:59:27 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:59:27 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:59:27 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:59:27 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:59:27 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_185_0 in memory.
+2020-05-09 04:59:27 WARN  MemoryStore:66 - Not enough space to cache rdd_185_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:59:27 WARN  BlockManager:66 - Block rdd_185_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:59:27 WARN  BlockManager:66 - Putting block rdd_185_0 failed
+2020-05-09 04:59:27 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_218_0 in memory.
+2020-05-09 04:59:27 WARN  MemoryStore:66 - Not enough space to cache rdd_218_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:59:27 WARN  BlockManager:66 - Block rdd_218_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:59:27 WARN  BlockManager:66 - Putting block rdd_218_0 failed
+2020-05-09 04:59:27 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_251_0 in memory.
+2020-05-09 04:59:27 WARN  MemoryStore:66 - Not enough space to cache rdd_251_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:59:27 WARN  BlockManager:66 - Block rdd_251_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:59:27 WARN  BlockManager:66 - Putting block rdd_251_0 failed
+2020-05-09 04:59:27 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:59:27 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:59:29 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 04:59:29 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 04:59:29 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 04:59:29 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:59:29 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:59:29 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:59:29 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:59:29 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:59:29 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:59:29 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_185_0 in memory.
+2020-05-09 04:59:29 WARN  MemoryStore:66 - Not enough space to cache rdd_185_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:59:29 WARN  BlockManager:66 - Block rdd_185_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:59:29 WARN  BlockManager:66 - Putting block rdd_185_0 failed
+2020-05-09 04:59:29 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_218_0 in memory.
+2020-05-09 04:59:29 WARN  MemoryStore:66 - Not enough space to cache rdd_218_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:59:29 WARN  BlockManager:66 - Block rdd_218_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:59:29 WARN  BlockManager:66 - Putting block rdd_218_0 failed
+2020-05-09 04:59:29 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_251_0 in memory.
+2020-05-09 04:59:29 WARN  MemoryStore:66 - Not enough space to cache rdd_251_0 in memory! (computed 384.0 B so far)
+2020-05-09 04:59:29 WARN  BlockManager:66 - Block rdd_251_0 could not be removed as it was not found on disk or in memory
+2020-05-09 04:59:29 WARN  BlockManager:66 - Putting block rdd_251_0 failed
+2020-05-09 04:59:29 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 04:59:29 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:00:43 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 05:00:43 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 05:00:43 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 05:00:43 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:00:43 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:00:43 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:00:43 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:00:43 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:00:43 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:00:43 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_185_0 in memory.
+2020-05-09 05:00:43 WARN  MemoryStore:66 - Not enough space to cache rdd_185_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:00:43 WARN  BlockManager:66 - Block rdd_185_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:00:43 WARN  BlockManager:66 - Putting block rdd_185_0 failed
+2020-05-09 05:00:43 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_218_0 in memory.
+2020-05-09 05:00:43 WARN  MemoryStore:66 - Not enough space to cache rdd_218_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:00:43 WARN  BlockManager:66 - Block rdd_218_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:00:43 WARN  BlockManager:66 - Putting block rdd_218_0 failed
+2020-05-09 05:00:43 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_251_0 in memory.
+2020-05-09 05:00:43 WARN  MemoryStore:66 - Not enough space to cache rdd_251_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:00:43 WARN  BlockManager:66 - Block rdd_251_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:00:43 WARN  BlockManager:66 - Putting block rdd_251_0 failed
+2020-05-09 05:00:43 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:00:43 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:01:57 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 05:01:59 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 05:01:59 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 05:01:59 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:01:59 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:01:59 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:01:59 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:01:59 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:01:59 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:01:59 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_185_0 in memory.
+2020-05-09 05:01:59 WARN  MemoryStore:66 - Not enough space to cache rdd_185_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:01:59 WARN  BlockManager:66 - Block rdd_185_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:01:59 WARN  BlockManager:66 - Putting block rdd_185_0 failed
+2020-05-09 05:01:59 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_218_0 in memory.
+2020-05-09 05:01:59 WARN  MemoryStore:66 - Not enough space to cache rdd_218_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:01:59 WARN  BlockManager:66 - Block rdd_218_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:01:59 WARN  BlockManager:66 - Putting block rdd_218_0 failed
+2020-05-09 05:01:59 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_251_0 in memory.
+2020-05-09 05:01:59 WARN  MemoryStore:66 - Not enough space to cache rdd_251_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:01:59 WARN  BlockManager:66 - Block rdd_251_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:01:59 WARN  BlockManager:66 - Putting block rdd_251_0 failed
+2020-05-09 05:01:59 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:01:59 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:01:59 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_261_0 in memory.
+2020-05-09 05:01:59 WARN  MemoryStore:66 - Not enough space to cache rdd_261_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:01:59 WARN  BlockManager:66 - Persisting block rdd_261_0 to disk instead.
+2020-05-09 05:03:36 WARN  MemoryStore:66 - Not enough space to cache rdd_261_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:03:48 WARN  MemoryStore:66 - Not enough space to cache rdd_261_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:04:01 WARN  MemoryStore:66 - Not enough space to cache rdd_261_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:04:13 WARN  MemoryStore:66 - Not enough space to cache rdd_261_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:04:25 WARN  MemoryStore:66 - Not enough space to cache rdd_261_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:04:38 WARN  MemoryStore:66 - Not enough space to cache rdd_261_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:04:51 WARN  MemoryStore:66 - Not enough space to cache rdd_261_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:05:04 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 05:05:04 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 05:05:04 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 05:05:04 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:05:04 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:05:04 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:05:04 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:05:04 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:05:04 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:05:04 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:05:04 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:05:04 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_218_0 in memory.
+2020-05-09 05:05:04 WARN  MemoryStore:66 - Not enough space to cache rdd_218_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:05:04 WARN  BlockManager:66 - Block rdd_218_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:05:04 WARN  BlockManager:66 - Putting block rdd_218_0 failed
+2020-05-09 05:05:04 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_251_0 in memory.
+2020-05-09 05:05:04 WARN  MemoryStore:66 - Not enough space to cache rdd_251_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:05:04 WARN  BlockManager:66 - Block rdd_251_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:05:04 WARN  BlockManager:66 - Putting block rdd_251_0 failed
+2020-05-09 05:05:04 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_284_0 in memory.
+2020-05-09 05:05:04 WARN  MemoryStore:66 - Not enough space to cache rdd_284_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:05:04 WARN  BlockManager:66 - Block rdd_284_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:05:04 WARN  BlockManager:66 - Putting block rdd_284_0 failed
+2020-05-09 05:05:04 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:05:04 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:05:06 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 05:05:07 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 05:05:07 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 05:05:07 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:05:07 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:05:07 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:05:07 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:05:07 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:05:07 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:05:07 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:05:07 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:05:07 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_218_0 in memory.
+2020-05-09 05:05:07 WARN  MemoryStore:66 - Not enough space to cache rdd_218_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:05:07 WARN  BlockManager:66 - Block rdd_218_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:05:07 WARN  BlockManager:66 - Putting block rdd_218_0 failed
+2020-05-09 05:05:07 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_251_0 in memory.
+2020-05-09 05:05:07 WARN  MemoryStore:66 - Not enough space to cache rdd_251_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:05:07 WARN  BlockManager:66 - Block rdd_251_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:05:07 WARN  BlockManager:66 - Putting block rdd_251_0 failed
+2020-05-09 05:05:07 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_284_0 in memory.
+2020-05-09 05:05:07 WARN  MemoryStore:66 - Not enough space to cache rdd_284_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:05:07 WARN  BlockManager:66 - Block rdd_284_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:05:07 WARN  BlockManager:66 - Putting block rdd_284_0 failed
+2020-05-09 05:05:07 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:05:07 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:06:30 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 05:06:30 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 05:06:31 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 05:06:31 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:06:31 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:06:31 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:06:31 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:06:31 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:06:31 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:06:31 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:06:31 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:06:31 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_218_0 in memory.
+2020-05-09 05:06:31 WARN  MemoryStore:66 - Not enough space to cache rdd_218_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:06:31 WARN  BlockManager:66 - Block rdd_218_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:06:31 WARN  BlockManager:66 - Putting block rdd_218_0 failed
+2020-05-09 05:06:31 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_251_0 in memory.
+2020-05-09 05:06:31 WARN  MemoryStore:66 - Not enough space to cache rdd_251_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:06:31 WARN  BlockManager:66 - Block rdd_251_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:06:31 WARN  BlockManager:66 - Putting block rdd_251_0 failed
+2020-05-09 05:06:31 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_284_0 in memory.
+2020-05-09 05:06:31 WARN  MemoryStore:66 - Not enough space to cache rdd_284_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:06:31 WARN  BlockManager:66 - Block rdd_284_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:06:31 WARN  BlockManager:66 - Putting block rdd_284_0 failed
+2020-05-09 05:06:31 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:06:31 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_218_0 in memory.
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Not enough space to cache rdd_218_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:07:55 WARN  BlockManager:66 - Block rdd_218_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:07:55 WARN  BlockManager:66 - Putting block rdd_218_0 failed
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_251_0 in memory.
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Not enough space to cache rdd_251_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:07:55 WARN  BlockManager:66 - Block rdd_251_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:07:55 WARN  BlockManager:66 - Putting block rdd_251_0 failed
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_284_0 in memory.
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Not enough space to cache rdd_284_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:07:55 WARN  BlockManager:66 - Block rdd_284_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:07:55 WARN  BlockManager:66 - Putting block rdd_284_0 failed
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_294_0 in memory.
+2020-05-09 05:07:55 WARN  MemoryStore:66 - Not enough space to cache rdd_294_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:07:55 WARN  BlockManager:66 - Persisting block rdd_294_0 to disk instead.
+2020-05-09 05:09:45 WARN  MemoryStore:66 - Not enough space to cache rdd_294_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:09:59 WARN  MemoryStore:66 - Not enough space to cache rdd_294_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:10:11 WARN  MemoryStore:66 - Not enough space to cache rdd_294_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:10:23 WARN  MemoryStore:66 - Not enough space to cache rdd_294_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:10:35 WARN  MemoryStore:66 - Not enough space to cache rdd_294_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:10:48 WARN  MemoryStore:66 - Not enough space to cache rdd_294_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:11:00 WARN  MemoryStore:66 - Not enough space to cache rdd_294_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:11:13 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_251_0 in memory.
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Not enough space to cache rdd_251_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:11:14 WARN  BlockManager:66 - Block rdd_251_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:11:14 WARN  BlockManager:66 - Putting block rdd_251_0 failed
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_284_0 in memory.
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Not enough space to cache rdd_284_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:11:14 WARN  BlockManager:66 - Block rdd_284_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:11:14 WARN  BlockManager:66 - Putting block rdd_284_0 failed
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_317_0 in memory.
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Not enough space to cache rdd_317_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:11:14 WARN  BlockManager:66 - Block rdd_317_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:11:14 WARN  BlockManager:66 - Putting block rdd_317_0 failed
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:11:14 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_251_0 in memory.
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Not enough space to cache rdd_251_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:11:16 WARN  BlockManager:66 - Block rdd_251_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:11:16 WARN  BlockManager:66 - Putting block rdd_251_0 failed
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_284_0 in memory.
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Not enough space to cache rdd_284_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:11:16 WARN  BlockManager:66 - Block rdd_284_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:11:16 WARN  BlockManager:66 - Putting block rdd_284_0 failed
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_317_0 in memory.
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Not enough space to cache rdd_317_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:11:16 WARN  BlockManager:66 - Block rdd_317_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:11:16 WARN  BlockManager:66 - Putting block rdd_317_0 failed
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:11:16 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_251_0 in memory.
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Not enough space to cache rdd_251_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:12:50 WARN  BlockManager:66 - Block rdd_251_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:12:50 WARN  BlockManager:66 - Putting block rdd_251_0 failed
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_284_0 in memory.
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Not enough space to cache rdd_284_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:12:50 WARN  BlockManager:66 - Block rdd_284_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:12:50 WARN  BlockManager:66 - Putting block rdd_284_0 failed
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_317_0 in memory.
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Not enough space to cache rdd_317_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:12:50 WARN  BlockManager:66 - Block rdd_317_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:12:50 WARN  BlockManager:66 - Putting block rdd_317_0 failed
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:12:50 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_251_0 in memory.
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Not enough space to cache rdd_251_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:14:25 WARN  BlockManager:66 - Block rdd_251_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:14:25 WARN  BlockManager:66 - Putting block rdd_251_0 failed
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_284_0 in memory.
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Not enough space to cache rdd_284_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:14:25 WARN  BlockManager:66 - Block rdd_284_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:14:25 WARN  BlockManager:66 - Putting block rdd_284_0 failed
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_317_0 in memory.
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Not enough space to cache rdd_317_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:14:25 WARN  BlockManager:66 - Block rdd_317_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:14:25 WARN  BlockManager:66 - Putting block rdd_317_0 failed
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_327_0 in memory.
+2020-05-09 05:14:25 WARN  MemoryStore:66 - Not enough space to cache rdd_327_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:14:25 WARN  BlockManager:66 - Persisting block rdd_327_0 to disk instead.
+2020-05-09 05:16:25 WARN  MemoryStore:66 - Not enough space to cache rdd_327_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:16:36 WARN  MemoryStore:66 - Not enough space to cache rdd_327_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:16:48 WARN  MemoryStore:66 - Not enough space to cache rdd_327_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:17:01 WARN  MemoryStore:66 - Not enough space to cache rdd_327_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:17:13 WARN  MemoryStore:66 - Not enough space to cache rdd_327_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:17:25 WARN  MemoryStore:66 - Not enough space to cache rdd_327_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:17:38 WARN  MemoryStore:66 - Not enough space to cache rdd_327_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_284_0 in memory.
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Not enough space to cache rdd_284_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:17:51 WARN  BlockManager:66 - Block rdd_284_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:17:51 WARN  BlockManager:66 - Putting block rdd_284_0 failed
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_317_0 in memory.
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Not enough space to cache rdd_317_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:17:51 WARN  BlockManager:66 - Block rdd_317_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:17:51 WARN  BlockManager:66 - Putting block rdd_317_0 failed
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_350_0 in memory.
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Not enough space to cache rdd_350_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:17:51 WARN  BlockManager:66 - Block rdd_350_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:17:51 WARN  BlockManager:66 - Putting block rdd_350_0 failed
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:17:51 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:17:53 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_284_0 in memory.
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Not enough space to cache rdd_284_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:17:54 WARN  BlockManager:66 - Block rdd_284_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:17:54 WARN  BlockManager:66 - Putting block rdd_284_0 failed
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_317_0 in memory.
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Not enough space to cache rdd_317_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:17:54 WARN  BlockManager:66 - Block rdd_317_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:17:54 WARN  BlockManager:66 - Putting block rdd_317_0 failed
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_350_0 in memory.
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Not enough space to cache rdd_350_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:17:54 WARN  BlockManager:66 - Block rdd_350_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:17:54 WARN  BlockManager:66 - Putting block rdd_350_0 failed
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:17:54 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 2.5 MB so far)
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_284_0 in memory.
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Not enough space to cache rdd_284_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:19:39 WARN  BlockManager:66 - Block rdd_284_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:19:39 WARN  BlockManager:66 - Putting block rdd_284_0 failed
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_317_0 in memory.
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Not enough space to cache rdd_317_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:19:39 WARN  BlockManager:66 - Block rdd_317_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:19:39 WARN  BlockManager:66 - Putting block rdd_317_0 failed
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_350_0 in memory.
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Not enough space to cache rdd_350_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:19:39 WARN  BlockManager:66 - Block rdd_350_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:19:39 WARN  BlockManager:66 - Putting block rdd_350_0 failed
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:19:39 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 355.5 MB so far)
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 8.3 MB so far)
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 1544.6 KB so far)
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_284_0 in memory.
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Not enough space to cache rdd_284_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:21:26 WARN  BlockManager:66 - Block rdd_284_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:21:26 WARN  BlockManager:66 - Putting block rdd_284_0 failed
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_317_0 in memory.
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Not enough space to cache rdd_317_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:21:26 WARN  BlockManager:66 - Block rdd_317_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:21:26 WARN  BlockManager:66 - Putting block rdd_317_0 failed
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_350_0 in memory.
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Not enough space to cache rdd_350_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:21:26 WARN  BlockManager:66 - Block rdd_350_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:21:26 WARN  BlockManager:66 - Putting block rdd_350_0 failed
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_55_0 in memory.
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Not enough space to cache rdd_55_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_360_0 in memory.
+2020-05-09 05:21:26 WARN  MemoryStore:66 - Not enough space to cache rdd_360_0 in memory! (computed 384.0 B so far)
+2020-05-09 05:21:26 WARN  BlockManager:66 - Persisting block rdd_360_0 to disk instead.
+2020-05-09 05:23:35 WARN  MemoryStore:66 - Not enough space to cache rdd_360_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:23:47 WARN  MemoryStore:66 - Not enough space to cache rdd_360_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:23:59 WARN  MemoryStore:66 - Not enough space to cache rdd_360_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:24:12 WARN  MemoryStore:66 - Not enough space to cache rdd_360_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:24:24 WARN  MemoryStore:66 - Not enough space to cache rdd_360_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:24:37 WARN  MemoryStore:66 - Not enough space to cache rdd_360_0 in memory! (computed 342.0 MB so far)
+2020-05-09 05:24:50 WARN  MemoryStore:66 - Not enough space to cache rdd_360_0 in memory! (computed 342.0 MB so far)
+training time of rfc: 255.01867189628655
+
+training time of gbt: 301.5678532221538
+Area Under Curve of rfc: 0.7574318435765743
+accuracy of rfc: 0.6881699922774266
+2020-05-09 05:49:52 WARN  BLAS:61 - Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+2020-05-09 05:49:52 WARN  BLAS:61 - Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+2020-05-09 05:50:46 WARN  MemoryStore:66 - Not enough space to cache rdd_421_0 in memory! (computed 40.5 MB so far)
+2020-05-09 05:50:46 WARN  BlockManager:66 - Block rdd_421_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:50:46 WARN  BlockManager:66 - Putting block rdd_421_0 failed
+2020-05-09 05:50:54 WARN  MemoryStore:66 - Not enough space to cache rdd_421_0 in memory! (computed 40.5 MB so far)
+2020-05-09 05:50:54 WARN  BlockManager:66 - Block rdd_421_0 could not be removed as it was not found on disk or in memory
+2020-05-09 05:50:54 WARN  BlockManager:66 - Putting block rdd_421_0 failed
+Area Under Curve of rfc: 0.7980536977394781
+accuracy of rfc: 0.7203353734126116
